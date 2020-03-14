@@ -7,7 +7,7 @@ function searchMovie(){
          type: 'get',
          dataType: 'json',
          data: {
-             'apikey' : 'f1f6c12b',
+             'apikey' : 'f1f6c12b',     //apikey nya dapet dari situs omdb gan
              's': $('#search-input').val()
          },
          success: function(result){
@@ -66,7 +66,7 @@ $('#movie-list').on('click','.see-detail', function(){
         type: 'get',
         dataType: 'json',
         data: {
-            'apikey' : 'f1f6c12b',
+            'apikey' : 'f1f6c12b',  //apikey nya dapet dari situs omdb gan
             'i': $(this).data('id')
         },
         success: function(movie){
